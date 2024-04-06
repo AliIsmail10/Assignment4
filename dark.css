@@ -1,0 +1,152 @@
+body {
+  transition: background-color 0.5s ease;
+}
+
+.icon-container label {
+  width: 100px;
+  height: 40px;
+  position: relative;
+  display: block;
+  background: #ebebeb;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.icon-container label:after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  background: #ffdd33;
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon-container input {
+  display: none;
+}
+
+.icon-container input:checked + label:after {
+  left: 90px;
+  transform: translateX(-100%);
+  background: #fff;
+}
+
+label,
+label:after {
+  transition: 0.3s;
+}
+
+label:active:after {
+  width: 40px;
+}
+/* ====================================== */
+/* Change Background */
+body:has(.mode:checked) {
+  background-color: #202020;
+}
+:has(.mode:checked) .nav-bar,
+:has(.mode:checked) .data-chefs,
+:has(.mode:checked) .data-contact,
+:has(.mode:checked) .contact-form {
+  background-color: #171717;
+}
+:has(.mode:checked) .bg {
+  background-color: #252525;
+}
+:has(.mode:checked) .bg-color {
+  background-color: #202020;
+}
+:has(.mode:checked) .bg .data-bg button,
+:has(.mode:checked) .play-icon i,
+:has(.mode:checked) .menu #active-home::after,
+:has(.mode:checked) .menu span a::after,
+:has(.mode:checked) .data-contact i,
+:has(.mode:checked) .contact-form button,
+:has(.mode:checked) .input-footer #submitButton {
+  background-color: #c17e1f;
+}
+:has(.mode:checked) .contact-form input,
+:has(.mode:checked) .contact-form textarea {
+  background-color: #fff;
+}
+:has(.mode:checked) .play-icon i:hover {
+  background-color: #c17e1f;
+}
+:has(.mode:checked) .play-icon i {
+  background-color: #fff;
+  color: #252525;
+}
+:has(.mode:checked) .bg .data-bg button:hover {
+  background-color: #eb9729;
+}
+:has(.mode:checked) .image-container::after {
+  background-image: url('data:image/svg+xml;utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"%3E%3Cpath fill="%23171717" fill-opacity="1" d="M0,128L34.3,160C68.6,192,137,256,206,261.3C274.3,267,343,213,411,208C480,203,549,245,617,229.3C685.7,213,754,139,823,122.7C891.4,107,960,149,1029,170.7C1097.1,192,1166,192,1234,165.3C1302.9,139,1371,85,1406,58.7L1440,32L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"%3E%3C/path%3E%3C/svg%3E');
+}
+
+:has(.mode:checked) .play-icon::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 150%;
+  height: 150%;
+  border-left: 40px solid #c17e1f;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  border-radius: 50%;
+  text-align: center;
+}
+
+/*Change color  */
+:has(.mode:checked) .data-bg h1,
+:has(.mode:checked) .data-bg p,
+:has(.mode:checked) #active-home a,
+:has(.mode:checked) h3,
+:has(.mode:checked) .title h5,
+:has(.mode:checked) .title h2 {
+  color: #fff;
+}
+
+:has(.mode:checked) .data-contact i,
+:has(.mode:checked) .contact-form button,
+:has(.mode:checked) .input-footer #submitButton {
+  color: #171717;
+}
+:has(.mode:checked) .nav-bar span,
+:has(.mode:checked) .title span,
+:has(.mode:checked) .chlid-footer span,
+:has(.mode:checked) .con-fot i {
+  color: #c17e1f;
+}
+
+:has(.mode:checked) .watch-video p:hover {
+  color: #c17e1f;
+}
+
+:has(.mode:checked) .nav-bar .close-menu,
+:has(.mode:checked) .nav-bar .open-menu {
+  color: #c17e1f;
+}
+
+/* other style */
+:has(.mode:checked) .child-chefs:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+:has(.mode:checked) .bg .data-bg button {
+  border: #c17e1f solid 1px;
+}
+
+:has(.mode:checked) .contact-form form input:focus,
+:has(.mode:checked) .contact-form form textarea:focus {
+  border: 3px solid #c17e1f;
+}
+
+:has(.mode:checked) *::selection{
+  background-color: #c17e1f;
+  color: #fff;
+}
