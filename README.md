@@ -1,3 +1,2 @@
-Repository Description:
 
-Welcome to the Mealify project repository, showcasing advanced HTML and CSS techniques. Dive into a meticulously crafted showcase featuring intricate animations and a sleek dark mode interface, all achieved purely with CSS. Our commitment to excellence is evident in every line of code, ensuring optimal accessibility, responsiveness, and semantic clarity. Explore the forefront of front-end development as we push the boundaries of web design innovation.
+Explore Mealify, a repository showcasing advanced HTML/CSS techniques. Featuring intricate animations and a sleek dark mode interface, all achieved purely with CSS. Our commitment to excellence ensures optimal accessibility and responsiveness. Delve into front-end development's forefront as we push boundaries. Whether seasoned or aspiring, Mealify offers insights to elevate your projects. Join us on this journey of web development artistry, including media queries for small screens.
